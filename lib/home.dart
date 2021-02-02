@@ -43,7 +43,10 @@ class _HomeState extends State<Home> {
               })
         ],
       ),
-      body: telas[_indiceAtual],
+      body: Container(
+        padding: EdgeInsets.all(16),
+        child: telas[_indiceAtual],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         // => faz com que as cores mudem no bottombar type: BottomNavigationBarType.shifting,
         type: BottomNavigationBarType.fixed,
